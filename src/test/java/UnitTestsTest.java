@@ -46,6 +46,6 @@ class UnitTestsTest {
 
     @Test
     void isPrime_ShouldReturnFalse_WennGivenNotPrimNumber() {
-        assertTrue(UnitTests.isPrime(9));
+        assertFalse(UnitTests.isPrime(9));
     }
 }
