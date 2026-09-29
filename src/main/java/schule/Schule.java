@@ -1,6 +1,7 @@
 package schule;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Schule {
@@ -36,13 +37,13 @@ public class Schule {
         return false;
     }
 
-    public List<Kurs> getKurseByStudentId(int studentenId) {
+    public HashMap<Integer, Kurs> getKurseByStudentId(int studentenId) {
         Student student = findStudentById(studentenId);
 
         if (student != null) {
             return student.getKurse();
         }
 
-        return new ArrayList<>();
+        return new HashMap<>();
     }
 }

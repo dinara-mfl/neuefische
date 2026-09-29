@@ -1,13 +1,16 @@
 package schule;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Student {
     private String vorname;
     private String nachname;
     private int studentenId;
-    private final List<Kurs> kurse = new ArrayList<>();
+    private static int kursId = 0;
+    private final Map<Integer, Kurs> kurse = new HashMap();
 
     public Student(String vorname, String nachname, int studentenId) {
         this.vorname = vorname;
@@ -28,11 +31,12 @@ public class Student {
     }
 
     public void addKurs(Kurs kurs) {
-        kurse.add(kurs);
+        kursId++;
+        kurse.put(kursId, kurs);
     }
 
-    public List<Kurs> getKurse() {
-        return new ArrayList<>(kurse);
+    public HashMap<Integer, Kurs> getKurse() {
+        return new HashMap<>(kurse);
     }
 
     @Override
