@@ -1,3 +1,5 @@
+package tests;
+
 public class UnitTests {
 
     // 1.1 Testen einer einfachen Methode

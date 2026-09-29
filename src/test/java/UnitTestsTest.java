@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import tests.UnitTests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -35,7 +36,7 @@ class UnitTestsTest {
     // 2.2 Fehlerfälle testen
     @Test
     void divide_ShouldReturnError_WennGivenNumberIs0() {
-        //assertThrows(IllegalArgumentException, UnitTests.divide(4,0));
+        //assertThrows(IllegalArgumentException, tests.UnitTests.divide(4,0));
     }
 
     // 3.1 Mehrfachtests für eine Methode

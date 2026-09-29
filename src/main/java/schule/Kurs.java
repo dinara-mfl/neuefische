@@ -1,3 +1,5 @@
+package schule;
+
 public class Kurs {
     private String kursname;
     private String dozent;

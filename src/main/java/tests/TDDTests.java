@@ -1,3 +1,5 @@
+package tests;
+
 public class TDDTests {
 
     // 1.1 Aufgabe 1 – sum()
