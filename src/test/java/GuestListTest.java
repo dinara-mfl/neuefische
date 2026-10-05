@@ -38,12 +38,13 @@ class GuestListTest {
         Path path = Path.of("guests.txt");
         Files.deleteIfExists(path);
 
-        List<String> expected = List.of("Theodor", "Anette");
+        guestList.setGuests(List.of("Theodor", "Anette"));
 
         assertTrue(Files.exists(path));
         assertEquals(
                 List.of("Theodor", "Anette"),
-                Files.readAllLines(path));
+                Files.readAllLines(path)
+        );
     }
 
     @Test
